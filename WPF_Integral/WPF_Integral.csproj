@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <!-- Лабораторная 2: открываем internal-классы для проекта с тестами -->
+  <ItemGroup>
+    <InternalsVisibleTo Include="WPF_Integral.Tests" />
+  </ItemGroup>
+
+</Project>

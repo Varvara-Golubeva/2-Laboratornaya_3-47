@@ -1,0 +1,42 @@
+﻿<Window x:Class="WPF_Integral.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Integral"
+        mc:Ignorable="d"
+        Title="Голубева 3-47" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Grid.Column="0">Верхний предел</Label>
+        <TextBox Name="tbUpper" Grid.Row="0" Margin ="0 5 0 5" Grid.Column="1">100000</TextBox>
+        <Label Grid.Row="1" Grid.Column="0">Нижний предел</Label>
+        <TextBox Name="tbLower" Grid.Row="1" Margin ="0 5 0 5" Grid.Column="1">1</TextBox>
+        <Label Grid.Row="2" Grid.Column="0">Количество разбиений</Label>
+        <TextBox Name="tbCount" Grid.Row="2" Margin ="0 5 0 5" Grid.Column="1">10000</TextBox>
+        <Label Grid.Row="3" Grid.Column="0">Метод</Label>
+        <ComboBox Name="cbMethod" Grid.Row="3" Grid.Column="1" SelectedIndex="0">
+            <ComboBoxItem>Метод симпсона</ComboBoxItem>
+            <ComboBoxItem>Метод трапеции</ComboBoxItem>
+        </ComboBox>
+        <Button Name="btCalculate" Grid.Row="4" Grid.Column="1" Click="btCalculate_Click">Посчитать</Button>
+        <Label Grid.Row="5" Grid.Column="0">Результат</Label>
+        <TextBlock Name="tbResult" Grid.Row="5" Grid.Column="1"></TextBlock>
+        
+
+
+
+
+    </Grid>
+</Window>

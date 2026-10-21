@@ -1,0 +1,7 @@
+# Папки Visual Studio и результаты сборки — в репозиторий не добавляем
+.vs/
+[Bb]in/
+[Oo]bj/
+*.user
+*.suo
+TestResults/
